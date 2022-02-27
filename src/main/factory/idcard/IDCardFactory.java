@@ -1,14 +1,15 @@
-package factory.idcard;
+package idcard;
 
 import framework.*;
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
 
 public class IDCardFactory extends Factory {
     private List owners = new ArrayList<String>();
-    protected Product createProduct(String owner) {
-        return IDCard(owner);
+    public Product createProduct(String owner) {
+        return new IDCard(owner);
     }
-    protected void registerProduct(Product p) {
+    public void registerProduct(Product p) {
         this.owners.add(((IDCard) p).getOwner());
     }
     public List getOwners() {

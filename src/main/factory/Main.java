@@ -1,7 +1,5 @@
-package factory;
-
-import factory.framework.*;
-import factory.idcard.*;
+import framework.*;
+import idcard.*;
 
 public class Main {
     public static void main(String[] args) {
