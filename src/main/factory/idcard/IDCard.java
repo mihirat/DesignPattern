@@ -1,4 +1,4 @@
-package factory.idcard;
+package idcard;
 
 import framework.*;
 
